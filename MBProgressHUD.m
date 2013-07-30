@@ -674,7 +674,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		detailsLabel.font = self.detailsLabelFont;
 	} else if ([keyPath isEqualToString:@"progress"]) {
 		if ([indicator respondsToSelector:@selector(setProgress:)]) {
-			[(id)indicator setProgress:progress];
+			[(UIProgressView *)indicator setProgress:progress];
 		}
 		return;
 	}
